@@ -267,12 +267,11 @@ h3 {
 }
 
 .footer-section .logo-footer {
-    max-width: 150px;
+    max-width: 250px;
     height: 100%;
     width: 100%;
     margin: 20px 0 0;
-    border-radius: 100%;
-    filter: invert(1) grayscale(1) brightness(1) contrast(0.8);
+    filter: invert(1) grayscale(1) brightness(2) opacity(0.5);
     mix-blend-mode: lighten;
 }
 
