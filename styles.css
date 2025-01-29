@@ -235,6 +235,7 @@ h3 {
 .info-section img {
     max-width: 100%;
     padding: 10px;
+    border-radius: 25px;
 }
 
 .wrap-text-column h3 {
