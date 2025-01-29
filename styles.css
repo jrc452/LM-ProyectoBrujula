@@ -1,8 +1,3 @@
-:root {
-    --main-c: #c3feae;
-    --border-r: .2rem;
-}
-
 html * {
     margin: 0;
     padding: 0;
@@ -22,19 +17,6 @@ li {
     list-style: none;
 }
 
-.wrap-cta {
-    padding: 1.5rem 0;
-}
-
-.cta-a {
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 1.2rem;
-    background-color: var(--main-c);
-    padding: .5rem 1rem;
-    border-radius: var(---r);
-}
-
 h1 {
     font-size: 2.8rem;
 }
@@ -47,13 +29,43 @@ h3 {
     font-size: 2.2rem;
 }
 
-/** Header **/
+/* HEADER */
 
-.header-landing {
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(rgb(182, 253, 159), rgb(205, 254, 186) 100%);
-    padding: 1rem;
+@media only screen and (min-width: 580px) {
+    .header-landing {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background: linear-gradient(rgb(182, 253, 159), rgb(205, 254, 186) 100%);
+        padding: 1rem;
+    }
+
+    .header-buttons {
+        width: 100%;
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .header-landing {
+        display: grid;
+        grid-template-rows: 1fr 0fr;
+        justify-content: center;
+        place-items: center;
+        background: linear-gradient(rgb(182, 253, 159), rgb(205, 254, 186) 100%);
+        padding: 1rem;
+    }
+
+    .header-buttons {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.header-buttons a {
+    font-weight: bold;
+    font-size: 4.5mm;
+    padding: 0 13px;
 }
 
 .logo-header {
@@ -82,7 +94,8 @@ h3 {
     padding: 15%;
 }
 
-/** Logo Brand Section **/
+/* SECCIONES */
+
 .section h2 {
     padding: 2rem 0;
 }
