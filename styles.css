@@ -136,7 +136,7 @@ h3 {
 .item-phrase-section,
 .item-section {
     padding: 2rem;
-    text-align: jus;
+    text-align: center;
 }
 
 .item-section img {
@@ -144,7 +144,7 @@ h3 {
     height: 225px;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 700px) {
     .wrap-equipo-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -153,21 +153,23 @@ h3 {
 
     .equipo-section {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 0 6px;
+        grid-template-rows: 1fr 1fr;
+        margin: 0 2px;
         text-align: justify;
         justify-content: center;
         place-items: center;
     }
 
     .equipo-section img {
-        border-radius: 100%;
-        max-height: 25vh;
-        padding: 10px;
+        border-radius: 25px;
+        max-width: 100%;
+        aspect-ratio: 2;
+        object-fit: cover;
+        padding: 5px;
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
     .wrap-equipo-section {
         margin: 0 auto;
     }
@@ -181,8 +183,10 @@ h3 {
     }
 
     .equipo-section img {
-        border-radius: 100%;
-        max-height: 34vh;
+        border-radius: 25px;
+        aspect-ratio: 1.66;
+        object-fit: cover;
+        max-width: 100%;
     }
 }
 
@@ -304,7 +308,6 @@ h3 {
     #equipo img {
         max-width: 300px;
         padding: 3px;
-        border-radius: 50px;
     }
 }
 
@@ -320,8 +323,13 @@ h3 {
     #equipo img {
         max-width: 100%;
         padding: 3px;
-        border-radius: 50px;
     }
+}
+
+#equipo img {
+    border-radius: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
 }
 
 /** FAQ **/
