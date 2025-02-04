@@ -250,6 +250,96 @@ h3 {
     padding-bottom: 1rem;
 }
 
+/** HISTORIA **/
+
+#historia {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 50px;
+    justify-content: center;
+    place-items: center;
+}
+
+#historia .texto {
+    text-align: justify;
+}
+
+#historia img {
+    padding: 10px;
+    border-radius: 25px;
+    max-width: 600px;
+}
+
+/** EQUIPO **/
+
+#equipo {
+    text-align: center;
+}
+
+@media only screen and (min-width: 960px) {
+    #equipo .three-column {
+        display: flex;
+        flex-flow: row;
+        margin: 0 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #equipo img {
+        max-width: 300px;
+        padding: 3px;
+        border-radius: 50px;
+    }
+}
+
+@media only screen and (max-width: 960px) and (min-width: 630px) {
+    #equipo .three-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 50px;
+        justify-content: center;
+        place-items: center;
+    }
+
+    #equipo img {
+        max-width: 300px;
+        padding: 3px;
+        border-radius: 50px;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    #equipo .three-column {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        margin: 0 50px;
+        justify-content: center;
+        place-items: center;
+    }
+
+    #equipo img {
+        max-width: 100%;
+        padding: 3px;
+        border-radius: 50px;
+    }
+}
+
+/** FAQ **/
+
+#faq {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 50px;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+}
+
+#faq h2,
+h3 {
+    padding: 25px;
+}
+
 /** FOOTER **/
 
 .footer-section {
